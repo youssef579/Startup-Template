@@ -25,6 +25,7 @@ header {
     top: 0;
     background-color: #fffeff;
     box-shadow: 0 0 5px black;
+    z-index: 999;
 }
 
 header .container {
@@ -83,7 +84,7 @@ main .container {
 main .container h1 {
     font-weight: 500;
     font-size: 4em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 main .container p {
@@ -106,3 +107,53 @@ main .container a:hover {
     opacity: 0.7;
 }
 /* End main section */
+
+/* About section */
+.about {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h1 + p {
+    font-size: 1.3em;
+    margin-bottom: 70px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.feature {
+    margin: 10px 0;
+    max-width: 250px;
+}
+
+.feature i {
+    font-size: 4em;
+}
+
+.feature h6 {
+    font-size: 1.5em;
+    margin: 20px;
+}
+/* End about section */
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .container .author {
+    color: slategray;
+    font-weight: 600;
+}
+
+footer .container .heart {
+    color: red;
+}
+/* End footer */
