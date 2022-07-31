@@ -1,0 +1,44 @@
+/* Main setup */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.8;
+}
+/* End main setup */
+
+/* Header */
+header {
+    background-color: #fffeff;
+    box-shadow: 0 0 5px black;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    display: inline-block;
+    height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #00030a;
+    font-size: 15px;
+    padding: 16px;
+}
+
+header a:hover {
+    background-color: silver;
+}
+
+.logo {
+    letter-spacing: 4px;
+}
+/* End header */
