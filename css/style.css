@@ -23,8 +23,8 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #fffeff;
-    box-shadow: 0 0 5px black;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     z-index: 999;
 }
 
@@ -38,7 +38,7 @@ header a {
     height: 100%;
     text-transform: uppercase;
     text-decoration: none;
-    color: #00030a;
+    color: #000;
     font-size: 1em;
     padding: 20px;
     transition: background-color 0.3s;
@@ -126,7 +126,7 @@ main .container a:hover {
 }
 
 .feature {
-    margin: 10px 0;
+    margin: 10px;
     max-width: 250px;
 }
 
@@ -140,10 +140,71 @@ main .container a:hover {
 }
 /* End about section */
 
+/* Work Example */
+.work-example {
+    padding: 60px 10px;
+    background-color: #f1f1f1;
+}
+
+.work-example .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-example .container .info {
+    max-width: 40%;
+}
+
+.work-example img {
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+}
+
+.work-example .container a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: min(1.2em, 3vw);
+    color: #fff;
+    width: fit-content;
+    text-transform: capitalize;
+    background-color: #000;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+.work-example .container a:hover {
+    color: #000;
+    background-color: silver;
+}
+
+@media (max-width: 774px) {
+    .work-example .container .info {
+        max-width: 100%;
+    }
+
+    .work-example .container * {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .work-example {
+        padding: 60px 30px;
+    }
+
+    .work-example .container {
+        flex-direction: column;
+    }
+}
+/* End work Example */
+
 /* Footer */
 footer {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 20px;
 }
@@ -154,6 +215,6 @@ footer .container .author {
 }
 
 footer .container .heart {
-    color: red;
+    color: #f00;
 }
 /* End footer */
