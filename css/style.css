@@ -201,6 +201,81 @@ main .container a:hover {
 }
 /* End work Example */
 
+/* Team */
+.team {
+    padding: 80px 0;
+}
+
+.team > h1, .team > p {
+    text-align: center;
+}
+
+.team > p {
+    font-size: 1.3em;
+    margin-bottom: 70px;
+}
+
+.team .members {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.team .member {
+    margin: 20px;
+    width: 315px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.member .name {
+    font-weight: normal;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.member .job {
+    color: #b5b4b4;
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.member .description {
+    margin-left: 15px;
+    line-height: 1.7;
+    color: #454545;
+}
+
+.member i {
+    margin: 0 4px;
+}
+
+.member a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: 1em;
+    background-color: #f1f1f0;
+    margin: 15px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.member a:hover {
+    background-color: silver;
+}
+
+.member img {
+    width: 100%;
+    filter: grayscale(80%);
+}
+/* End team */
+
+/* Statistics */
+
+/* End statistics */
+
 /* Footer */
 footer {
     background-color: #000;
