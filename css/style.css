@@ -110,7 +110,7 @@ main .container a:hover {
 
 /* About section */
 .about {
-    padding: 80px 0;
+    padding: 90px 0;
     text-align: center;
 }
 
@@ -203,7 +203,7 @@ main .container a:hover {
 
 /* Team */
 .team {
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 .team > h1, .team > p {
@@ -246,10 +246,6 @@ main .container a:hover {
     color: #454545;
 }
 
-.member i {
-    margin: 0 4px;
-}
-
 .member a {
     display: block;
     text-decoration: none;
@@ -273,7 +269,23 @@ main .container a:hover {
 /* End team */
 
 /* Statistics */
+.statistics {
+    background-color: #616061;
+    padding: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: min(1.2em, 3vw);
+}
 
+.statistics .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.statistics .info .amount {
+    font-family: sans-serif;
+}
 /* End statistics */
 
 /* Footer */
