@@ -327,6 +327,78 @@ main .container a:hover {
 }
 /* End uur work */
 
+/* Our skills */
+.our-skills {
+    padding: 60px 0;
+    background-color: #f1f1f1;
+}
+
+.our-skills .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-skills .container > div {
+    flex-basis: 50%;
+    margin: 30px;
+}
+
+.our-skills .container .info p {
+    line-height: 1.8;
+}
+
+.our-skills h2, .our-skills h3 {
+    font-weight: normal;
+}
+
+.our-skills i {
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.our-skills h3:first-child {
+    letter-spacing: 1px;
+}
+
+.our-skills .amount {
+    font-size: 20px;
+}
+
+.our-skills .skill h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-skills progress {
+    border-radius: 9px;
+    width: 100%;
+    height: 18px;
+    transition: all 0.7s;
+}
+
+.our-skills progress::-webkit-progress-value {
+    background: #616161;
+    border-radius: 9px;
+}
+
+.our-skills progress::-webkit-progress-bar {
+    background: rgb(158, 158, 158);
+    border-radius: 9px;
+}
+
+@media (max-width: 789px) {
+    .our-skills .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .our-skills .container > div {
+        margin: 10px 20px;
+    }
+}
+/* End our skills */
+
 /* Footer */
 footer {
     background-color: #000;
@@ -336,7 +408,7 @@ footer {
 }
 
 footer .container .author {
-    color: slategray;
+    color: silver;
     font-weight: 600;
 }
 
