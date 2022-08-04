@@ -2,6 +2,8 @@
 :root {
     --header-size: 60.8px;
     --section-padding: 90px;
+    --main-color: #616161;
+    --grey: #f1f1f1;
 }
 /* End variables */
 
@@ -29,7 +31,7 @@ body {
 
 .special-paragraph {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 60px;
 }
 /* End main setup */
@@ -122,6 +124,25 @@ main .container a {
 main .container a:hover {
     opacity: 0.7;
 }
+
+main .icons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: space-around;
+    width: calc(1.2em * 6 + 10px);
+}
+
+main .icons i {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+main .icons i:hover {
+    opacity: 0.7;
+}
 /* End main section */
 
 /* About section */
@@ -154,12 +175,16 @@ main .container a:hover {
 /* Work Example */
 .work-example {
     padding: 60px 10px;
-    background-color: #f1f1f1;
+    background-color: var(--grey);
 }
 
 .work-example .container {
     display: flex;
     justify-content: space-around;
+}
+
+.work-example p {
+    line-height: 1.8;
 }
 
 .work-example .container .info {
@@ -196,16 +221,16 @@ main .container a:hover {
     .work-example .container .info {
         max-width: 100%;
     }
-
+    
     .work-example .container * {
         margin: 10px 0;
         width: 100%;
     }
-
+    
     .work-example {
         padding: 60px 30px;
     }
-
+    
     .work-example .container {
         flex-direction: column;
     }
@@ -277,7 +302,7 @@ main .container a:hover {
 
 /* Statistics */
 .statistics {
-    background-color: #616061;
+    background-color: var(--main-color);
     padding: 40px;
     color: #fff;
     text-transform: capitalize;
@@ -330,7 +355,7 @@ main .container a:hover {
 /* Our skills */
 .our-skills {
     padding: 60px 0;
-    background-color: #f1f1f1;
+    background-color: var(--grey);
 }
 
 .our-skills .container {
@@ -378,7 +403,7 @@ main .container a:hover {
 }
 
 .our-skills progress::-webkit-progress-value {
-    background: #616161;
+    background: var(--main-color);
     border-radius: 9px;
 }
 
@@ -392,12 +417,91 @@ main .container a:hover {
         flex-direction: column;
         align-items: stretch;
     }
-
+    
     .our-skills .container > div {
         margin: 10px 20px;
     }
 }
 /* End our skills */
+
+/* Pricing */
+.pricing {
+    padding: var(--section-padding) 20px;
+    background-color: var(--main-color);
+}
+/* End pricing */
+
+/* Contact */
+.contact {
+    background-color: var(--grey);
+    padding: var(--section-padding) 20px;
+}
+
+.contact .icons i {
+    font-size: 2.5em;
+    display: block;
+    margin: 20px;
+    margin-left: 0;
+    position: relative;
+}
+
+.contact .icons {
+    margin: 60px 0;
+}
+
+.contact .icons i::after {
+    content: attr(data-p);
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    font-family: "Raleway", sans-serif;
+    white-space: nowrap;
+}
+
+.contact .icons i:nth-child(2)::after {
+    font-family: sans-serif;
+}
+
+input {
+    display: block;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 0;
+    border: 1px solid #cdcccc;
+    padding: 12px;
+    outline: none;
+}
+
+input:not([type="submit"]):focus {
+    border-color: #000;
+}
+
+button {
+    background-color: #000;
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+button:hover {
+    color: #000;
+    background-color: silver;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+/* End contact */
 
 /* Footer */
 footer {
@@ -405,6 +509,19 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+footer i {
+    font-size: 25px !important;
+    cursor: pointer;
+    color: #000;
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 100%;
+}
+
+footer i:hover {
+    background-color: silver;
 }
 
 footer .container .author {
