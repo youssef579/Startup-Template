@@ -5,6 +5,7 @@
     --main-color: #616161;
     --grey: #f1f1f1;
 }
+
 /* End variables */
 
 /* Main setup */
@@ -34,6 +35,7 @@ body {
     font-size: 1.2em;
     margin-bottom: 60px;
 }
+
 /* End main setup */
 
 /* Header */
@@ -69,6 +71,7 @@ header a:hover {
 .logo {
     letter-spacing: 4px;
 }
+
 /* End header */
 
 /* Main section */
@@ -143,6 +146,7 @@ main .icons i {
 main .icons i:hover {
     opacity: 0.7;
 }
+
 /* End main section */
 
 /* About section */
@@ -170,6 +174,7 @@ main .icons i:hover {
     font-size: 1.5em;
     margin: 20px;
 }
+
 /* End about section */
 
 /* Work Example */
@@ -221,20 +226,21 @@ main .icons i:hover {
     .work-example .container .info {
         max-width: 100%;
     }
-    
+
     .work-example .container * {
         margin: 10px 0;
         width: 100%;
     }
-    
+
     .work-example {
         padding: 60px 30px;
     }
-    
+
     .work-example .container {
         flex-direction: column;
     }
 }
+
 /* End work Example */
 
 /* Team */
@@ -284,7 +290,7 @@ main .icons i:hover {
     text-align: center;
     color: #000;
     font-size: 1em;
-    background-color: #f1f1f0;
+    background-color: var(--grey);
     margin: 15px;
     padding: 10px;
     transition: background-color 0.3s;
@@ -298,6 +304,7 @@ main .icons i:hover {
     width: 100%;
     filter: grayscale(80%);
 }
+
 /* End team */
 
 /* Statistics */
@@ -318,6 +325,7 @@ main .icons i:hover {
     font-size: 3em;
     margin-bottom: 0;
 }
+
 /* End statistics */
 
 /* Our work */
@@ -350,6 +358,7 @@ main .icons i:hover {
     height: 100%;
     border-radius: 3px;
 }
+
 /* End uur work */
 
 /* Our skills */
@@ -364,7 +373,7 @@ main .icons i:hover {
     align-items: center;
 }
 
-.our-skills .container > div {
+.our-skills .container>div {
     flex-basis: 50%;
     margin: 30px;
 }
@@ -373,7 +382,8 @@ main .icons i:hover {
     line-height: 1.8;
 }
 
-.our-skills h2, .our-skills h3 {
+.our-skills h2,
+.our-skills h3 {
     font-weight: normal;
 }
 
@@ -417,17 +427,103 @@ main .icons i:hover {
         flex-direction: column;
         align-items: stretch;
     }
-    
-    .our-skills .container > div {
+
+    .our-skills .container>div {
         margin: 10px 20px;
     }
 }
+
 /* End our skills */
 
 /* Pricing */
 .pricing {
-    padding: var(--section-padding) 20px;
+    padding: var(--section-padding) 0;
     background-color: var(--main-color);
+}
+
+.pricing>p,
+.pricing>h1 {
+    color: #fff;
+}
+
+.pricing .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pricing .container>div {
+    flex-basis: calc((100% - 80px) / 3);
+    text-align: center;
+    background-color: #fff;
+}
+
+hr {
+    margin: 0;
+    border-color: rgb(221 221 221 / 30%);
+}
+
+.plan-heading {
+    font-size: 1.6em;
+    color: #fff;
+    margin: 0;
+    font-weight: normal;
+    padding: 40px;
+    text-transform: capitalize;
+    background-color: #000;
+}
+
+.plan-two .plan-heading {
+    padding: 60px;
+    background-color: #f44236;
+}
+
+.pricing .amount {
+    font-size: 20px;
+}
+
+.price+span {
+    color: #acacac;
+    font-size: 0.9em;
+}
+
+.price {
+    display: block;
+    font-size: 30px !important;
+    margin-bottom: 10px;
+}
+
+.pricing .container > div div {
+    padding: 20px;
+    background-color: var(--grey);
+}
+
+.sign-up {
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+.sign-up:hover {
+    color: #000;
+    background-color: silver;
+}
+
+@media (max-width: 770px) {
+    .pricing .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pricing .container > div {
+        margin: 20px;
+    }
 }
 /* End pricing */
 
@@ -468,7 +564,7 @@ input {
     display: block;
 }
 
-input:not([type="submit"]) {
+input {
     width: 100%;
     margin: 15px 0;
     border-radius: 0;
@@ -477,7 +573,7 @@ input:not([type="submit"]) {
     outline: none;
 }
 
-input:not([type="submit"]):focus {
+input:focus {
     border-color: #000;
 }
 
@@ -532,4 +628,5 @@ footer .container .author {
 footer .container .heart {
     color: #f00;
 }
+
 /* End footer */
