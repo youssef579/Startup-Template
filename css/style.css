@@ -94,6 +94,7 @@ header .list:hover {
         display: block;
     }
 }
+
 /* End header */
 
 /* Main section */
@@ -184,6 +185,7 @@ main .icons i:hover {
         left: 20px;
     }
 }
+
 /* End main section */
 
 /* About section */
@@ -362,6 +364,7 @@ main .icons i:hover {
     font-size: 3em;
     margin-bottom: 0;
 }
+
 /* End statistics */
 
 /* Our work */
@@ -400,6 +403,7 @@ main .icons i:hover {
 .work .container img:hover {
     opacity: 0.8;
 }
+
 /* End uur work */
 
 /* Our skills */
@@ -534,7 +538,7 @@ hr {
     margin-bottom: 10px;
 }
 
-.pricing .container > div div {
+.pricing .container>div div {
     padding: 20px;
     background-color: var(--grey);
 }
@@ -562,10 +566,11 @@ hr {
         align-items: stretch;
     }
 
-    .pricing .container > div {
+    .pricing .container>div {
         margin: 20px;
     }
 }
+
 /* End pricing */
 
 /* Contact */
@@ -672,4 +677,5 @@ footer .container .author {
 footer .container .heart {
     color: #f00;
 }
+
 /* End footer */
