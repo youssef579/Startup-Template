@@ -90,8 +90,8 @@ header .list:hover {
         display: none;
     }
 
-    header .list, .sidebar {
-        display: block !important;
+    header .list{
+        display: block;
     }
 }
 
@@ -107,7 +107,7 @@ header .list:hover {
     top: 0;
     left: 0;
     z-index: 999;
-    transition: display 0.3s;
+    transition: all 0.3s;
 }
 
 .sidebar .container {
