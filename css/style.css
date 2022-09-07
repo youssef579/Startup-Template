@@ -117,6 +117,7 @@ header .list:hover {
 }
 
 .sidebar .container a {
+    cursor: pointer;
     padding: 10px 20px;
     text-transform: capitalize;
     text-decoration: none;

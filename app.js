@@ -1,11 +1,16 @@
-document.getElementsByClassName("sidebar")[0].style.display = "none";
+let sideBar = document.querySelector('.sidebar')
+let logo = document.querySelector(".logo")
 
-document.getElementsByClassName('list')[0].addEventListener('click', function () {
-    document.getElementsByClassName("sidebar")[0].style.display == "none" ?
-    document.getElementsByClassName("sidebar")[0].style.display = "block" :
-    document.getElementsByClassName("sidebar")[0].style.display = "none";
+sideBar.style.display = "none";
+
+document.querySelector(".list").addEventListener('click', function () {
+    if (sideBar.style.display == "none") {
+        sideBar.style.display = "block";
+    } else {
+        sideBar.style.display = "block";
+    }
 })
 
 document.querySelector('.sidebar a:first-child').addEventListener('click', function () {
-    document.getElementsByClassName("sidebar")[0].style.display = "none";
+    sideBar.style.display = "none";
 })
